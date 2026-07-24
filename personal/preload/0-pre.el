@@ -1,3 +1,8 @@
+(use-package hc-zenburn-theme
+  :ensure t)
+
+(setq prelude-theme 'hc-zenburn)
+
 (defvar zenburn-colors-alist '())
 
 (defvar zenburn-override-colors-alist
@@ -52,7 +57,7 @@ Each element has the form (NAME . HEX).
 `+N' suffixes indicate a color is lighter.
 `-N' suffixes indicate a color is darker.")
 
-(use-package hc-zenburn-theme
-  :ensure t)
+;; (use-package hc-zenburn-theme
+;;   :ensure t)
 
-(setq prelude-theme 'hc-zenburn)
+;; (setq prelude-theme 'hc-zenburn)

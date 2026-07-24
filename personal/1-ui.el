@@ -264,6 +264,13 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 (global-flycheck-mode -1)
 
+(use-package diredfl
+  :ensure t
+  :config
+  (diredfl-global-mode)
+  )
+
+
 (define-key dired-mode-map (kbd ",v") 'dired-ranger-paste)
 (define-key dired-mode-map (kbd ",c") 'dired-ranger-copy)
 (define-key dired-mode-map (kbd ",V") 'dired-ranger-move)
@@ -416,6 +423,8 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (define-key dired-mode-map ",r" 'helm-recentf)
 (define-key dired-mode-map ",/" 'helm-find)
 (define-key dired-mode-map ";" 'god-execute-with-current-bindings)
+
+(setq dired-listing-switches "-alh")
 
 (defun iterm-goto-filedir-or-home-new-tab ()
   (interactive)
