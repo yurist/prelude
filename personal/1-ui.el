@@ -272,7 +272,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 
 (define-key dired-mode-map (kbd ",v") 'dired-ranger-paste)
-(define-key dired-mode-map (kbd ",c") 'dired-ranger-copy)
+(define-key dired-mode-map (kbd ",C") 'dired-ranger-copy)
 (define-key dired-mode-map (kbd ",V") 'dired-ranger-move)
 
 (global-visual-line-mode)
@@ -407,6 +407,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 ;; (define-key dired-mode-map (kbd "SPC") 'dired-find-alternate-file)
 ;; (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
 (evil-leader/set-key "j" 'dired-jump)
+(define-key evil-normal-state-map "q" 'dired-jump)
 (define-key dired-mode-map "q" 'dired-jump)
 (define-key dired-mode-map ",j" 'dired-jump)
 (define-key dired-mode-map ",B" 'helm-mini)
@@ -543,6 +544,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (add-to-list 'evil-emacs-state-modes 'haskell-error-mode)
 (add-to-list 'evil-emacs-state-modes 'makey-key-mode)
 (add-to-list 'evil-emacs-state-modes 'eshell-mode)
+(add-to-list 'evil-emacs-state-modes 'eat-mode)
 (add-to-list 'evil-emacs-state-modes 'tuareg-interactive-mode)
 (add-to-list 'evil-emacs-state-modes 'dired-mode)
 (add-to-list 'evil-emacs-state-modes 'cider-inspector-mode)

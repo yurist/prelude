@@ -72,3 +72,4 @@
 
 (evil-define-key 'normal evil-commentary-mode-map "gc" 'evil-commentary)
 (evil-define-key 'visual evil-commentary-mode-map "gc" 'evil-commentary)
+
