@@ -583,3 +583,5 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (delete 'Info-mode evil-motion-state-modes)
 (delete 'eshell-mode evil-insert-state-modes)
 (delete 'shell-mode evil-insert-state-modes)
+
+(prelude-mode -1)
